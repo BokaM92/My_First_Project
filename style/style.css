@@ -1,0 +1,1002 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+    background-color: #ddd;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+#page {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#home {
+    width: 100%;
+}
+
+/* HEADER START */
+
+#header {
+    width: 100%;
+    position: relative;
+}
+
+#header .logo {
+    position: absolute;
+    border: 1px solid skyblue;
+    color: skyblue;
+    border-radius: 100px;
+    width: 200px;
+    height: 130px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/backgroundMain.png");
+}
+
+#header .nav-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+#header .nav-bar .nav-bar-top {
+    display: flex;
+    padding-left: 190px;
+}
+
+#header .nav-bar .nav-bar-top .menu-main {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 34px;
+    border: 1px solid skyblue;
+    background-image: url("../img/backgroundMain.png");
+    padding: 20px 0;
+}
+
+#header .nav-bar .nav-bar-top ul a {
+    color: skyblue;
+}
+
+#header .nav-bar .nav-bar-top ul a:hover {
+    color: #daa520 !important;
+}
+
+#header .nav-bar .nav-bar-bottom {
+    display: flex;
+    margin-left: 170px;
+    justify-content: flex-end;
+}
+
+#header .nav-bar .nav-bar-bottom .search {
+    width: max-content;
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 22px;
+    padding: 9px;
+}
+
+.nav-bar input[type="checkbox"] {
+    display: none;
+}
+
+#header .nav-bar .nav-bar-top .cb-holder {
+    display: none;
+}
+
+/* HEADER END */
+
+/* HOME-MAIN START */
+
+.home-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home-main .home-img img {
+    width: 90%;
+}
+
+/* HOME-MAIN END */
+
+/* ABOUT START */
+
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-white{
+    width: 100%;
+    height: 150px;
+}
+
+#about .about-description {
+    background-image: url("../img/backgroundMain.png");
+    color: skyblue;
+    padding: 30px 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#about .about-img-holder {
+    margin: 10px 0;
+    background: url("../img/europe_img_2.jpg") no-repeat center / cover fixed;
+    height: 350px;
+}
+
+/* ABOUT END */
+
+/* DESTINATIONS START */
+
+#destinations {
+    width: 100%;
+    padding: 0 20px;
+} 
+
+#destinations .destinations-white {
+    width: 100%;
+    height: 150px;
+}
+
+#destinations .destinations-container {
+    width: 100%;
+}
+
+#destinations .destinations-description {
+    margin-bottom: 100px;
+}
+
+#destinations .destinations-description .destinations-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#destinations .destinations-description .destinations-container .destinations-title {
+    width: 50%;
+    line-height: 48px;
+    letter-spacing: -0.045em;   
+}
+
+#destinations .destinations-description .destinations-container .destinations-info {
+    width: fit-content;
+}
+
+#destinations .destinations-gallery .destinations-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 40px;
+}
+
+#destinations .destinations-gallery .destinations-container .destinations-img-position:nth-child(3n-1) {
+    margin-top: 100px;
+}
+
+#destinations .destinations-gallery .destinations-container .destinations-img-position .destinations-img-holder {
+    position: relative;
+}
+
+#destinations .destinations-gallery .destinations-container .destinations-img-position .destinations-img-holder .place {
+    position: absolute;
+    transform-origin: right;
+    transform: rotateZ(90deg);
+    width: 120px;
+    top: 112px;
+    right: -10px;
+    font-size: 12px;    
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+#destinations .destinations-gallery .destinations-container .destinations-img-position .see-more {
+    width: max-content;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+/* DESTINATIONS END */
+
+/* HOTELS & PUBS START */
+
+#hotels-pubs {
+    width: 100%;
+    background: url("../img/backgroundMain.png");
+    padding-bottom: 20px;
+}
+
+#hotels-pubs .h-p-white {
+    width: 100%;
+    height: 150px;
+}
+
+#hotels-pubs .h-P-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #daa520;
+}
+
+#hotels-pubs .h-P-title h2 {
+    position: relative;
+    width: max-content;
+}
+
+#hotels-pubs .h-p-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#hotels-pubs .h-p-list ul {
+    padding: 0 50px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+#hotels-pubs .h-p-list ul li {
+    margin-top: 15px;
+}
+
+#hotels-pubs .h-p-list ul li a:hover {
+    color: #daa520 !important;
+}
+
+/* HOTELS & PUBS END */
+
+/* PARIS START */
+
+#paris {
+    width: 100%;
+}
+
+#paris .paris-white {
+    width: 100%;
+    height: 150px;
+}
+
+.theme-1 {
+    width: 100%;
+}
+.theme-1 .t1-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-1 .t1-title p {
+    position: relative;
+}
+
+.theme-1 .t1-title p::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.theme-1 .t1-title p::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    right: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.theme-1 .t1-holder {
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+}
+
+.theme-1 .t1-holder .t1-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-1 .t1-holder .t1-left .h-p {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.theme-1 .t1-holder .t1-left .h-p ul li {
+    margin-top: 10px;
+}
+
+.theme-1 .t1-holder .t1-left .h-p ul li a:hover {
+    color: skyblue !important;
+}
+
+.theme-1 .t1-holder .t1-left .t1-description {
+    margin-top: 30px;
+}
+
+.theme-1 .t1-holder .t1-left .t1-description p {
+    text-align: justify;
+}
+
+.theme-1 .t1-holder .t1-right {
+    width: 50%;
+    padding: 5px;
+    background: url("../img/parisnight.jpg") no-repeat center / cover;
+}
+
+/* PARIS END */
+
+/* ROME START */
+
+#rome {
+    width: 100%;
+}
+
+#rome .rome-white {
+    width: 100%;
+    height: 150px;
+}
+
+.theme-2 {
+    padding-bottom: 20px;
+    width: 100%;
+    background: url("../img/backgroundMain.png");
+}
+.theme-2 .t2-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #daa520;
+}
+
+.theme-2 .t2-title p {
+    position: relative;
+    color: skyblue;
+}
+
+.theme-2 .t2-title p::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.theme-2 .t2-title p::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    right: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.theme-2 .t2-holder {
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+}
+
+.theme-2 .t2-holder .t2-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-2 .t2-holder .t2-right .h-p {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: skyblue;
+}
+
+.theme-2 .t2-holder .t2-right .h-p ul li {
+    margin-top: 10px;
+}
+
+.theme-2 .t2-holder .t2-right .h-p ul li a:hover {
+    color: #daa520 !important;
+}
+
+.theme-2 .t2-holder .t2-right .t2-description {
+    margin-top: 30px;
+}
+
+.theme-2 .t2-holder .t2-right .t2-description p {
+    text-align: justify;
+    color: skyblue;
+}
+
+.theme-2 .t2-holder .t2-left {
+    width: 50%;
+    padding: 5px;
+    background: url("../img/romenight.jpg") no-repeat center / cover;
+}
+
+/* ROME END */
+
+/* TRANSYLVANIA START */
+
+#transylvania .transylvania-white {
+    width: 100%;
+    height: 150px;
+}
+
+#transylvania .theme-1 .t1-holder .t1-right {
+    background: url("../img/transilvanianight.png") no-repeat center / cover;
+}
+
+/* TRANSYLVANIA END */
+
+/* PRAGUE START */
+
+#prague .prague-white {
+    width: 100%;
+    height: 150px;
+}
+
+#prague .theme-2 .t2-holder .t2-left {
+    background: url("../img/praguenight.jpg") no-repeat center / cover;
+}
+
+/* PRAGUE END */
+
+/* MILANO START */
+
+#milano .milano-white {
+    width: 100%;
+    height: 150px;
+}
+
+#milano .theme-1 .t1-holder .t1-right{
+    background: url("../img/milanonight.jpg") no-repeat center / cover;
+    border: 1px solid skyblue;
+}
+
+/* MILANO END */
+
+/* COGNAC START */
+
+#cognac .cognac-white {
+    width: 100%;
+    height: 150px;
+}
+
+#cognac .theme-2 .t2-holder .t2-left {
+    background: url("../img/cognacnight.jpg") no-repeat center / cover;
+}
+
+/* COGNAC END */
+
+/* CONTACT START */
+
+#contact {
+    width: 100%;
+    text-align: center;
+}
+
+#contact .contact-white {
+    width: 100%;
+    height: 120px;
+}
+
+#contact .contact-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#contact .contact-title p {
+    position: relative;
+}
+
+#contact .contact-title p::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#contact .contact-title p::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    right: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#contact .contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#contact .contact-form p {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#contact .contact-form .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#contact .contact-form .form-group .input-wraper {
+    width: calc(50% - 15px);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#contact .contact-form .form-group .input-wraper input {
+    width: 100%;
+    height: 46px;
+    border: 1px solid gray;
+    border-radius: 23px;
+    padding-left: 49px;
+}
+
+#contact .contact-form .form-group .input-wraper i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    opacity: 0.6;
+}
+
+#contact .contact-form .form-group .input-wraper input:focus {
+    border-color: #daa520;
+    outline: none;
+}
+
+#contact .contact-form .input-wraper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#contact .contact-form .input-wraper textarea {
+    width: 100%;
+    height: 130px;
+    border: 1px solid gray;
+    border-radius: 23px;
+    padding: 10px 0 0 49px;
+}
+
+#contact .contact-form .input-wraper i {
+    top: 10px;
+    left: 20px;
+    opacity: 0.6;
+    position: absolute;
+}
+
+#contact .contact-form .input-wraper textarea:focus {
+    border-color: #daa520;
+    outline: none;
+}
+
+#contact .contact-form .btn {
+    display: inline-block;
+    height: 46px;
+    padding: 0 35px;
+    position: relative;
+    line-height: 46px;
+    border-radius: 23px;
+    border: 1px solid #daa520;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+#contact .contact-form .btn span {
+    position: relative;
+    z-index: 2;
+}
+
+#contact .contact-form .btn span i {
+    margin-right: 8px;
+}
+
+#contact .contact-form .btn {
+    background-color: #daa520;
+    color: #fff;
+}
+
+#contact .contact-form .btn::before {
+    content: "";
+    position: absolute;
+    background: url("../img/backgroundMain.png");
+    display: inline-block;
+    width: 104%;
+    height: 100%;
+    top: 0;
+    left: -2%;
+    transform: skew(-8deg);
+    transition: left 0.4s;
+}
+
+#contact .contact-form .btn:hover::before {
+    left: 104%;
+}
+
+#contact .contact-bottom {
+    width: 100%;
+    display: flex;
+    background: url("../img/backgroundMain.png");
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#contact .contact-bottom .personal {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color: #daa520;
+}
+
+#contact .contact-bottom .personal li:nth-child(2) {
+    margin-left: 20px;
+}
+
+#contact .contact-bottom .personal a:hover {
+    color: #daa520;
+}
+
+#contact .contact-bottom .personal a {
+    color: skyblue;
+}
+
+#contact .contact-bottom .social {
+    text-align: center;
+}
+
+#contact .contact-bottom .social a {
+    width: 35px;
+    height: 35px;
+    color: skyblue;
+    background-color: #404554;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    display: inline-block;
+}
+
+#contact .contact-bottom .social a:not(:last-child) {
+    margin-right: 7px;
+}
+
+#contact .contact-bottom .social a:hover {
+    color: #daa520;
+}
+
+#contact .cr {
+    text-align: center;
+    background-color: #404554;
+    margin-top: 1px;
+    padding: 5px 0;
+    color: skyblue;
+}
+
+/* CONTACT END */
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    /* DESCRIPTION START */
+
+    #destinations .destinations-description {
+        text-align: center;
+    }
+
+    #destinations .destinations-description .destinations-container {
+        flex-direction: column;
+    }
+
+    #destinations .destinations-description .destinations-container .destinations-title {
+        width: 100%;   
+    }
+    
+    #destinations .destinations-description .destinations-container .destinations-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #destinations .destinations-gallery .destinations-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #destinations .destinations-gallery .destinations-container .destinations-img-position:nth-child(even) {
+        margin-top: 50px;
+    }
+
+    #destinations .destinations-gallery .destinations-container .destinations-img-position:nth-child(odd) {
+        margin-top: 0;
+    }
+
+    /* DESCRIPTION END */
+}
+
+@media screen and (max-width: 675px) {
+
+    /* HEADER START */
+
+    #header .nav-bar .nav-bar-bottom .search {
+        display: none;
+    }
+
+    #header .nav-bar .nav-bar-top ul li {
+        display: none;
+    }
+
+    #header .nav-bar .nav-bar-top .cb-holder {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 56px;
+    }
+
+    #header .nav-bar .nav-bar-top .cb-holder label {
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    #header .nav-bar .nav-bar-top .cb-holder label span {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background-color: skyblue;
+    }
+    
+    #header .nav-bar .nav-bar-top .cb-holder label span:nth-child(2) {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background-color: skyblue;
+        top: 10px;
+    }
+    
+    #header .nav-bar .nav-bar-top .cb-holder label span:last-child {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background-color: skyblue;
+        top: 20px;
+    }
+
+    #header .nav-bar .nav-bar-top .cb-holder label span:first-child {
+        transform: translateY(0) rotate(0deg);
+        transition: all 0.4s;
+    }
+    
+    #header .nav-bar .nav-bar-top .cb-holder label span:nth-child(2) {
+        top: 12px; 
+        transform: translateY(-50%);
+    
+    }
+    
+    #header .nav-bar .nav-bar-top .cb-holder label span:last-child {
+        transform: translateY(0) rotate(0deg);
+        transition: all 0.4s;
+    }
+
+    #header .nav-bar .nav-bar-top .cb-holder input[type="checkbox"]:checked ~ label span:first-child {
+        top: 9px;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    
+    #header .nav-bar .nav-bar-top .cb-holder input[type="checkbox"]:checked ~ label span:last-child {
+        top: 5px;
+        transform: translateY(50%)rotate(-45deg);
+    }
+    
+    #header .nav-bar .nav-bar-top .cb-holder input[type="checkbox"]:checked ~ label span:nth-child(2) {
+        display: none;
+    }
+
+    #header .nav-bar .nav-bar-top .cb-holder .menu {
+        position: absolute;
+        background-image: url("../img/backgroundMain.png");
+        z-index: 4;
+        left: -90px;
+        width: 160px;
+        top: 46px;
+        padding: 20px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.4s;
+        border: 1px solid skyblue;
+        border-radius: 10%;
+    } 
+    
+    #header .nav-bar .nav-bar-top .cb-holder .menu li {
+        line-height: 3;
+        display: block;
+    }
+    
+    #header .nav-bar .nav-bar-top .cb-holder .menu li a {
+        width: 100%;
+        color: skyblue;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    #header .nav-bar .nav-bar-top .cb-holder input[type="checkbox"]:checked ~ .menu {
+        transform: scaleY(1);
+    }
+
+    /* HEADER END */
+
+    /* ABOUT START */
+
+    #about .about-description .alies {
+        margin: 30px 0;
+    }
+
+    /* ABOUT END */
+
+    /* PARIS START (theme-1)*/
+
+    .theme-1 .t1-holder {
+        flex-direction: column-reverse;
+    }
+
+    .theme-1 .t1-holder .t1-left {
+        width: 100%;
+    }
+
+    .theme-1 .t1-holder .t1-right {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 70px;
+    }
+
+    /* PARIS END*/
+
+    /* ROME START(theme-2) */
+
+    .theme-2 .t2-holder {
+        flex-direction: column;
+    }
+
+    .theme-2 .t2-holder .t2-right {
+        width: 100%;
+    }
+
+    .theme-2 .t2-holder .t2-left {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 70px;
+    }
+
+    /* ROME END */
+
+    /* CONTACT START */
+
+    #contact .contact-form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #contact .contact-form .form-group {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-form .input-wraper {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+
+    #contact .contact-bottom .personal {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contact .contact-bottom .personal li:nth-child(2) {
+        margin-left: 0;
+    }
+
+    /* CONTACT END */
+}
+
+@media screen and (max-width: 470px) {
+
+    /* CONTACT START */
+
+    #contact .contact-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .contact-bottom .personal {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* CONTACT END */
+}
+
+@media screen and (max-width: 380px) {
+
+    /* DESCRIPTION START */
+
+    #destinations .destinations-gallery .destinations-container {
+        grid-template-columns: 1fr;
+    }
+
+    #destinations .destinations-gallery .destinations-container .destinations-img-position:nth-child(even) {
+        margin-top: 0;
+    }
+
+    /* DESCRIPTION END */
+}
